@@ -362,11 +362,17 @@ img.u-image {
 }
 .u-section-6 .u-btn-2 {
     background-image: none;
+    background-color: #FF942C;
     border-style: none;
     font-weight: 700;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 30px auto 60px;
+}
+
+.u-btn-2:hover {
+    background-color: #FFA54D;
 }
 
 .u-section-7 {
@@ -409,11 +415,6 @@ img.u-image {
     font-family: var(--Font-Cormorant);
 }
 
-
-.escondido {
-    display: none;
-}
-  
 
 *, *:before, *:after {
     box-sizing: border-box;
