@@ -1,0 +1,4 @@
+function mostrarMensagem() {
+  var mensagem = document.getElementById("mensagem");
+  mensagem.classList.remove("escondido");
+}
