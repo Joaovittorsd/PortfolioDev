@@ -39,11 +39,51 @@ h1, h2, h3, h4, h5, h6{
     background-color: #1f203a;
 }
 
-.buguer {
+.u-header-menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.u-menu-item {
+    display: inline-block;
+    margin: 30px 15px; 
+}
+
+.u-menu-item a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 15px;
+}
+
+.burger {
     margin-top: 30px;
     font-size: 2rem !important;
     float: right;
     margin-right: 30px;
+}
+
+@media (min-width: 601px) {
+    span.material-symbols-outlined.burger {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    span.material-symbols-outlined.burger {
+        display: none;
+    }
+}
+
+.image{
+    width: 422px;
+    height: 422px;
+    background-image: url(https://drive.google.com/uc?export=view&id=1XCWwlcA5HCfbHgN4j0bGro39aZIW5ptn);
+    background-position: 50% 50%;
+    background-size: cover;
+    margin: -343px auto 0;
+    border-radius: 50% !important;
+    border: solid 8px #ffffff;
 }
 
 .u-align-center {
@@ -59,20 +99,8 @@ h1, h2, h3, h4, h5, h6{
 
 .u-grey-5 {
     color: #111111;
-    background-color: #f2f2f2;
+    background-color: #e2dddd8c;
 }
-
-.image{
-    width: 422px;
-    height: 422px;
-    background-image: url(https://drive.google.com/uc?export=view&id=1ZVpmIqXCLEMfgrs_LQkzKJSlfuJ75EdV);
-    background-position: 50% 50%;
-    background-size: cover;
-    margin: -343px auto 0;
-    border-radius: 50% !important;
-    border: solid 8px #ffffff;
-}
-
 
 .u-text{
     word-wrap: break-word;
@@ -334,11 +362,11 @@ img.u-image {
 
 .u-section-6 {
     background-image: none;
-    min-height: 550px;
+    min-height: 400px;
     margin: 0 auto;
 }
 .u-section-6 .u-gallery-1 {
-    height: 550px;
+    height: 350px;
     margin-top: 30px;
     margin-bottom: 0;
 }
@@ -368,11 +396,15 @@ img.u-image {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 30px auto 60px;
 }
 
 .u-btn-2:hover {
     background-color: #FFA54D;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto; 
 }
 
 .u-section-7 {
