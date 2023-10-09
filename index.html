@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body class="u-body">
-    <header>
+    <header id="home">
         <nav class="u-palette-1-base">
             <span class="material-symbols-outlined burger">
             menu
@@ -19,9 +21,9 @@
             <ul class="u-header-menu">
               <li class="u-menu-item home"><a class="smooth-scroll" href="#home">HOME</a></li>
               <li class="u-menu-item"><a class="smooth-scroll" href="#sobre">SOBRE</a></li>
-              <li class="u-menu-item"><a class="smooth-scroll" href="#experience">EXPERIENCIA</a></li>
-              <li class="u-menu-item"><a class="smooth-scroll" href="#portfolio">PORTFÓLIO</a></li>
-              <li class="u-menu-item"><a class="smooth-scroll" href="#contact">CONTATO</a></li>
+              <li class="u-menu-item"><a class="smooth-scroll" href="#tecnologia">TECNOLOGIAS</a></li>
+              <li class="u-menu-item"><a class="smooth-scroll" href="#curriculo">CURRÍCULO</a></li>
+              <li class="u-menu-item"><a class="smooth-scroll" href="#projeto">PROJETO</a></li>
           </ul>
         </nav>
     </header>  
@@ -29,15 +31,17 @@
     <section class="u-align-center u-section-2">
         <div class="u-section-2 u-shape-1 u-grey-5"></div>
         <div class="image"></div>
-        <h2 class="u-text u-text-1" id="sobre">
+        <span id="sobre"></span>
+        <h2 class="u-text u-text-1">
             <b>João vitor</b>
             Lima Silva
         </h2>
-        <p class="u-text u-text-2">Minha paixão pela programação é o que me motiva todos os dias a buscar novos desafios e aprimorar minhas habilidades. É incrível como <br> a programação permite transformar ideias em soluções funcionais e inovadoras, e não há nada mais gratificante do que ver um projeto concluído e em funcionamento.</p>
+        <p class="u-text u-text-2">Minha paixão pela programação é o que me motiva todos os dias a buscar novos desafios e aprimorar minhas habilidades. É incrível como <br> 
+          a programação permite transformar ideias em soluções funcionais e inovadoras, e não há nada mais gratificante do que ver um projeto concluído e em funcionamento.</p>
     </section>
 
     <section class="u-clearfix u-grey-10 u-valign-top-lg u-valign-top-xl u-section-3">
-        <div class="u-expanded-width u-shape u-shape-rectangle u-white u-shape-1"></div>
+        <div class="u-expanded-width u-shape u-shape-rectangle u-white u-shape-1" id="tecnologia"></div>
         <div class="u-clearfix u-gutter-50 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
@@ -64,7 +68,7 @@
         </div>
       </section>
 
-      <section class="u-clearfix u-white u-section-4">
+      <section class="u-clearfix u-white u-section-4" id="curriculo">
         <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-sheet-1">
           <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
             <div class="u-layout">
@@ -81,7 +85,7 @@
                     <p class="u-text u-text-2">Imagine ter suas necessidades tecnológicas atendidas por um programador apaixonado e experiente. Com conhecimentos em diversas tecnologias, incluindo C#, HTML, CSS, JavaScript, API, SQL Server, .NET e Power BI, eu possuo experiência no desenvolvimento de sistemas e aplicativos para web e desktop, para criar soluções eficientes e intuitivas.<br><br>
 
                     Minha paixão pela tecnologia não se limita apenas às habilidades técnicas, eu também estou sempre em busca de novos conhecimentos e habilidades para aprimorar minhas capacidades. Como uma pessoa pró-ativa e comprometida com a entrega de soluções inovadoras, viso sempre melhorar a eficiência de processos empresariais e otimizar o desempenho de plataformas online.</p>
-                    <a href="https://drive.google.com/file/d/1ZP3qwG1nl6zm297sFAwG3k2VEPuF9DdV/view?usp=drive_link" target="_blank" class="u-btn u-button-style u-palette-2-base u-btn-1">DOWNLOAD CURRÍCULO</a>
+                    <a href="https://drive.google.com/file/d/1O7MrVjmnDM6byDf6_fuizUx_Zjd87YIX/view?usp=drive_link" target="_blank" class="u-btn u-button-style u-palette-2-base u-btn-1">DOWNLOAD CURRÍCULO</a>
                   </div>
                 </div>
               </div>
@@ -89,6 +93,8 @@
           </div>
         </div>
       </section>
+
+      <div id="projeto"></div>
 
       <section class="u-clearfix u-section-5">
         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
@@ -117,8 +123,8 @@
                 </div>
             </div>
         </div>
-          <a href="#" target="_blank" class="u-btn u-button-style u-palette-2-base u-btn-2">Veja mais (Em Construção)</a>
-      </section>
+        <a href="#" target="_blank" class="u-btn u-button-style u-palette-2-base u-btn-2">Veja mais (Em Construção)</a>
+    </section>    
 
       <footer class="u-align-center u-clearfix u-image u-shading u-section-7" data-image-width="1980" data-image-height="806" id="sec-77fd">
         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
@@ -144,5 +150,7 @@
             </div>
         </div>
       </footer>
+
+      <script src="./JavaScript/script"></script>
 </body>
 </html>
