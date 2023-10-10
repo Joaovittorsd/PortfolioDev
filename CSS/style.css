@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 300;
     letter-spacing: 4px;
     font-size: 3rem;
-    width: 603px;
+    width: 100%;
     margin: 60px auto 0;
 }
 
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6{
 
 .u-section-3 .u-layout-wrap-1 {
     width: 1140px;
-    margin: -472px auto 60px;
+    margin: -472px auto 0;
 }
 
 .u-gutter-50 .u-layout {
@@ -271,7 +271,6 @@ img.u-image {
 }
 
 .u-section-4 .u-layout-wrap-1 {
-    margin-top: 60px;
     margin-bottom: 60px;
 }
 
@@ -446,6 +445,82 @@ img.u-image {
 
 *, *:before, *:after {
     box-sizing: border-box;
+}
+
+@media (max-width: 425px) {
+    .u-section-2 .u-shape-1 {
+        height: 300px;
+    }
+
+    .image {
+        width: 268px;
+        height: 262px;
+        margin: -178px auto 0;
+    }
+
+    .u-section-2 .u-text-2 {
+        width: 85%;
+    }
+
+    .u-layout-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .u-container-style.u-layout-cell.u-left-cell.u-size-30.u-layout-cell-1 {
+        width: 90%;
+    }
+
+    .u-section-3 .u-expanded-width {
+        width: 100% !important;
+    }
+
+    .u-container-style.u-layout-cell.u-right-cell.u-size-30.u-layout-cell-2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .u-section-3 .u-layout-cell-2 {
+        min-height: 100%;
+    }
+
+    img.u-expanded-width.u-image.u-image-2 {
+        display: none;
+    }
+
+    .u-section-4 .u-layout-cell-1 {
+        min-height: 0; 
+        width: 100%;
+    }
+
+    .u-section-4 .u-layout-cell-2 {
+        width: 100%;
+    }
+
+    .u-section-4 .u-text-2 {
+        margin: 66px 0 53px;
+    }
+
+    .u-container-layout.u-valign-middle.u-container-layout-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .u-gallery-inner.u-gallery-inner-1 {
+        display: block;
+    }
+
+    img.u-back-image.u-expanded.responsive-image.img-1, 
+    img.u-back-image.u-expanded.responsive-image.img-3 {
+        display: none;
+    }
+
+    .u-section-7 .u-text-1 {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
