@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
 section > *, header > *, footer > *, .u-sheet > * {
     position: relative;
 }
@@ -343,6 +348,18 @@ img.u-image {
     cursor: pointer;
 }
 
+.u-section-5 .u-layout {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-section-5 .u-clearfix.u-sheet.u-valign-middle.u-sheet-1 {
+    width: 1200px;
+}
+
 .u-section-6 {
     display: flex;
     flex-direction: column;
@@ -361,19 +378,9 @@ img.u-image {
     margin-bottom: 0;
 }
 
-.u-gallery-1{
-    display: flex;
-    justify-content: center;
-}
-
 .u-section-6 .u-gallery-inner-1 {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.u-section-6 .u-text-1 {
-    width: 542px;
-    margin: 28px auto 0;
 }
 
 .u-section-6 .u-btn-1 {
@@ -400,6 +407,78 @@ img.u-image {
 .responsive-image {
     max-width: 100%;
     height: auto; 
+}
+
+input[type=radio]{
+    display: none;
+  }
+  
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+  
+/*.u-card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease ;
+}
+
+.u-container{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 380px;
+    margin: auto;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.u-cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}*/
+
+#item-1:checked ~ .u-cards #song-3, 
+#item-2:checked ~ .u-cards #song-1, 
+#item-3:checked ~ .u-cards #song-2 {
+    transform: translateX(-95%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .u-cards #song-2, 
+#item-2:checked ~ .u-cards #song-3, 
+#item-3:checked ~ .u-cards #song-1 {
+    transform: translateX(95%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .u-cards #song-1, 
+#item-2:checked ~ .u-cards #song-2, 
+#item-3:checked ~ .u-cards #song-3 {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+#item-1:checked ~ .u-cards #song-1 img, 
+#item-2:checked ~ .u-cards #song-2 img, 
+#item-3:checked ~ .u-cards #song-3 img {
+    box-shadow: o o 5px o rgb(81, 81, 81, 0.47);
 }
 
 .u-section-7 {
