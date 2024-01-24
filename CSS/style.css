@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6{
     margin-right: 30px;
 }
 
-.image img{
+.image .imgPerfil{
     width: 422px;
     height: 422px;
     background-position: 50% 50%;
